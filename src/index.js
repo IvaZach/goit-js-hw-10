@@ -50,12 +50,15 @@ choiceOfCollection.addEventListener('change', onChoice);
 
 function onChoice(evn) {
   const breedId = evn.currentTarget.value;
+
   funcLoadingAdd();
   catInfo.classList.add('is-hidden');
+
   fetchCatByBreed(breedId)
     .then(data => renderCardCat(data))
     .catch(error => {
       funcError();
+      catInfo.classList.add('is-hidden');
       console.log(error);
     });
 }
