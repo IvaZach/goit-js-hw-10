@@ -30,12 +30,7 @@ export function fetchCatByBreed(breedId) {
     breed_ids: breedId,
   });
 
-  return fetch(`${BASE_URL}${END_POINT_SEARCH}?${param}`, option).then(
-    response => {
-      if (!response.ok) {
-        throw new Error(response.status);
-      }
-      return response.json();
-    }
-  );
+  return axios.get(`${BASE_URL}${END_POINT_SEARCH}?${param}`).then(response => {
+    return response.data;
+  });
 }

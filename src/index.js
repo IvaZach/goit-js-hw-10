@@ -45,7 +45,6 @@ function markupSection(breedsCollection) {
   new SlimSelect({
     select: choiceOfCollection,
   });
-  
 }
 choiceOfCollection.addEventListener('change', onChoice);
 
