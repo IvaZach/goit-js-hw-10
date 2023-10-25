@@ -6,17 +6,6 @@ body {
   color: #2f2f37;
 }
 
-select {
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
 .is-hidden {
   position: absolute;
   width: 1px;
@@ -28,4 +17,13 @@ select {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.cat-info {
+  margin: 30px;
+}
+
+.ss-main {
+  width: 50%;
+  font-size: 20px;
 }

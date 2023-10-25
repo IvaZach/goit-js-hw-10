@@ -42,6 +42,10 @@ function markupSection(breedsCollection) {
     })
     .join('');
   choiceOfCollection.innerHTML = markupSect;
+  new SlimSelect({
+    select: choiceOfCollection,
+  });
+  
 }
 choiceOfCollection.addEventListener('change', onChoice);
 
